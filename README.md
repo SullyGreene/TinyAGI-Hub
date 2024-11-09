@@ -14,11 +14,15 @@ Welcome to the **TinyAGI Hub**! This is the official community marketplace for s
   - [Plugins](#plugins)
   - [Modules](#modules)
   - [Tools](#tools)
-- [Contributing](#contributing)
+- [🛠️ TinyAGI-Hub Streamlit UI](#-tinyagi-hub-streamlit-ui)
+  - [🚀 Features](#-features)
+  - [🧰 Setup Instructions](#-setup-instructions)
+  - [📚 Documentation](#-documentation)
+- [📝 **Contributing**](#contributing)
   - [Submitting Your Contribution](#submitting-your-contribution)
   - [Contribution Checklist](#contribution-checklist)
-- [Code of Conduct](#code-of-conduct)
-- [Resources](#resources)
+- [📜 **Code of Conduct**](#code-of-conduct)
+- [📚 **Resources**](#resources)
 
 ---
 
@@ -52,6 +56,72 @@ The [Tools](https://github.com/SullyGreene/TinyAGI-Hub/Tools) category offers in
 
 ---
 
+## 🛠️ **TinyAGI-Hub Streamlit UI**
+
+The **TinyAGI-Hub Streamlit UI** is a comprehensive, user-friendly web application designed to manage and configure TinyAGI components seamlessly. This multi-page application allows users to:
+
+- **Manage Agents, Plugins, Tools, Modules, and Services**: Add, remove, and configure each component with ease.
+- **Build and Edit Configuration Files**: Create and modify `agent_config.json` through an intuitive interface.
+- **Execute Predefined Tasks**: Run tasks directly from the UI and view outputs.
+- **Integrate with TinyAGI Hub**: Clone or update the TinyAGI-Hub repository, browse available components, and import them into your setup.
+
+### 🚀 **Features**
+
+- **Multi-Page Interface**: Organized sections for different management tasks.
+- **Real-Time Feedback**: Status messages and spinners provide user feedback during operations.
+- **Configuration Builder**: View, edit, download, and upload configurations.
+- **Task Execution**: Define and run tasks with configurable options.
+- **Hub Integration**: Browse and import community-contributed components.
+
+### 🧰 **Setup Instructions**
+
+1. **Clone the Repository**
+
+   Ensure you have [Git](https://git-scm.com/) installed.
+
+   ```bash
+   git clone https://github.com/SullyGreene/TinyAGI-Hub-Streamlit.git
+   cd TinyAGI-Hub-Streamlit
+   ```
+
+2. **Create a Virtual Environment**
+
+   It's recommended to use a virtual environment to manage dependencies.
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up Environment Variables**
+
+   Open the `.env` file and replace `your_openai_api_key` with your actual OpenAI API key.
+
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   LOG_LEVEL=INFO
+   ```
+
+5. **Run the Streamlit App**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+   This command will launch the Streamlit application in your default web browser.
+
+### 📚 **Documentation**
+
+For detailed usage instructions and further customization, refer to the [TinyAGI-Hub Streamlit Documentation](https://github.com/SullyGreene/TinyAGI-Hub-Streamlit/blob/main/README.md) (replace with the actual link if available).
+
+---
+
 ## 📝 **Contributing**
 
 TinyAGI Hub is powered by community contributions! We welcome your expertise and creativity in expanding the capabilities of TinyAGI. Follow these guidelines to submit your contributions to the Hub.
@@ -59,40 +129,40 @@ TinyAGI Hub is powered by community contributions! We welcome your expertise and
 ### Submitting Your Contribution
 
 1. **Fork the Repository**
-  
-  Begin by forking the TinyAGI Hub repository to your GitHub account.
-  
-  ```bash
-  git clone https://github.com/SullyGreene/TinyAGI-Hub.git
-  cd TinyAGI-Hub
-  ```
-  
+   
+   Begin by forking the TinyAGI Hub repository to your GitHub account.
+   
+   ```bash
+   git clone https://github.com/SullyGreene/TinyAGI-Hub.git
+   cd TinyAGI-Hub
+   ```
+   
 2. **Add Your Contribution**
-  
-  - **Navigate to the Appropriate Category Folder**: Choose `Agents`, `Plugins`, `Modules`, or `Tools`.
-  - **Create a New Directory**: Name it descriptively based on the functionality (e.g., `TextSummarizer` or `DataAnalyzerAgent`).
-  - **Include Necessary Files**: Add all relevant code, configuration, and assets for your contribution.
-  - **Documentation**: Include a `README.md` file that follows this format:
-    - **Overview**: Briefly describe what the contribution does.
-    - **Installation**: Specify dependencies and installation steps if necessary.
-    - **Usage**: Provide example usage within TinyAGI.
-    - **Configuration**: Describe any adjustable settings.
-    - **License**: Specify the license (TinyAGI Hub uses MIT by default).
+   
+   - **Navigate to the Appropriate Category Folder**: Choose `Agents`, `Plugins`, `Modules`, or `Tools`.
+   - **Create a New Directory**: Name it descriptively based on the functionality (e.g., `TextSummarizer` or `DataAnalyzerAgent`).
+   - **Include Necessary Files**: Add all relevant code, configuration, and assets for your contribution.
+   - **Documentation**: Include a `README.md` file that follows this format:
+     - **Overview**: Briefly describe what the contribution does.
+     - **Installation**: Specify dependencies and installation steps if necessary.
+     - **Usage**: Provide example usage within TinyAGI.
+     - **Configuration**: Describe any adjustable settings.
+     - **License**: Specify the license (TinyAGI Hub uses MIT by default).
 3. **Commit and Push**
-  
-  - Commit your changes with a descriptive message:
-    
-    ```bash
-    git commit -m "Add TextSummarizer plugin"
-    ```
-    
-  - Push your changes to your fork.
-    
+   
+   - Commit your changes with a descriptive message:
+     
+     ```bash
+     git commit -m "Add TextSummarizer plugin"
+     ```
+     
+   - Push your changes to your fork.
+     
 4. **Submit a Pull Request**
-  
-  - Open a pull request to the main TinyAGI Hub repository.
-  - Include a brief summary, installation instructions, and any additional setup steps.
-  - Respond to any feedback from maintainers to ensure your contribution meets quality and compatibility standards.
+   
+   - Open a pull request to the main TinyAGI Hub repository.
+   - Include a brief summary, installation instructions, and any additional setup steps.
+   - Respond to any feedback from maintainers to ensure your contribution meets quality and compatibility standards.
 
 ---
 
@@ -123,7 +193,15 @@ To maintain a healthy and collaborative community, please adhere to these guidel
 - **[TinyAGI Documentation](https://github.com/SullyGreene/TinyAGI/tree/main/Documents)**: Get an in-depth understanding of TinyAGI's architecture.
 - **[TinyAGI Hub Documentation](https://github.com/SullyGreene/TinyAGI-Hub/Documents)**: Learn more about existing Hub contributions.
 - **[Core Repository Contribution Guide](https://github.com/SullyGreene/TinyAGI)**: For those interested in contributing directly to TinyAGI’s core repository.
+- **[TinyAGI-Hub Streamlit UI](https://github.com/SullyGreene/TinyAGI-Hub-Streamlit)**: Manage and configure TinyAGI components through a user-friendly web interface.
 
 ---
 
 **We’re excited to see what you create with TinyAGI!** Whether it’s a new agent, plugin, module, or tool, your contribution helps build a stronger, more capable AGI community. Thank you for helping make TinyAGI Hub a vibrant, collaborative space for AGI innovation. Happy coding! 🚀🤖
+
+---
+
+## 📦 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

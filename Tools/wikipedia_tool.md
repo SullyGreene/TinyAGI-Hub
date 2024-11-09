@@ -83,7 +83,7 @@ With `WikipediaTool` configured, you can now use it within TinyAGI's task framew
 To execute tasks configured in `agent_config.json`, run the following command:
 
 ```bash
-python run.py -c config/agent_config.json
+python TinyAGI --Config config/agent_config.json
 ```
 
 ### 2. **Using the CLI with `WikipediaTool`**
